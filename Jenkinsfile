@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('SQA-Blink-01') {
+    stage('build') {
       steps {
-        bat 'hostname'
+        echo 'build'
       }
     }
   }
