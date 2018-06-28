@@ -11,5 +11,10 @@ pipeline {
         bat 'hostname'
       }
     }
+    stage('') {
+      steps {
+        bat 'hostname'
+      }
+    }
   }
 }
