@@ -11,7 +11,7 @@ pipeline {
         bat 'hostname'
       }
     }
-    stage('') {
+    stage('deploy') {
       steps {
         bat 'hostname'
       }
