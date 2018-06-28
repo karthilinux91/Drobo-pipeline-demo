@@ -6,5 +6,10 @@ pipeline {
         bat 'hostname'
       }
     }
+    stage('test') {
+      steps {
+        bat 'date'
+      }
+    }
   }
 }
