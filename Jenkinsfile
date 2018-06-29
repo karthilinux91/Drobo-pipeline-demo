@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        bat 'hostname'
+        bat 'hostnamegj'
       }
     }
     stage('deploy') {
