@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        bat 'hostnamegj'
+        bat(script: 'hostnamegj', returnStatus: true, returnStdout: true)
       }
     }
     stage('deploy') {
