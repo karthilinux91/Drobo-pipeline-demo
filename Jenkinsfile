@@ -16,5 +16,10 @@ pipeline {
         bat 'hostname'
       }
     }
+    stage('FINAL') {
+      steps {
+        build(job: 'job1', propagate: true, quietPeriod: -2)
+      }
+    }
   }
 }
